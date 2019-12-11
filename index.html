@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>my-hw-7-bootstrap</title>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+      <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="#"><img src="img/versus.png" alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">SERVICES</a>
+                        </li>
+                        <!-- dropdown -->
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                PORTFOLIO
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">PORTFOLIO 2 column page</a>
+                            <a class="dropdown-item" href="#">PORTFOLIO 2 column page</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">PORTFOLIO 2 column page</a>
+                          </div>
+                        </li>
+
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">FEATURES</a>
+                        </li>
+                        <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACTS</a>
+                        </li>
+                        <li class="nav-item">
+                                <i class="fas fa-search"></i>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+      </div>  
+    </header>
+
+    <main>
+      <main class="content">
+      <!-- slider -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="carousel-item__content">
+                     <div class="carousel-item__content__header">Vestibulum</div>
+                      <p class="carousel-item__content__text">Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut
+                        commodo.</p>
+                    </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="carousel-item__content">
+                      <div class="carousel-item__content__header">Vestibulum</div>
+                      <p class="carousel-item__content__text">Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut
+                        commodo.</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <div class="carousel-item__content">
+                      <div class="carousel-item__content__header">Vestibulum</div>
+                      <p class="carousel-item__content__text">Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut
+                        commodo.</p>
+                    </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"> <i class="fas fa-angle-double-left"></i></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-angle-double-right"></i></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>     
+
+          <!-- ADVERTISEMENT -->
+
+        <div class="advertisement">
+          <div class="container">
+            <div class="advertisement__container__content">
+                <div class="row">
+                    <div class="col-md-9">
+                        <h2 class="advertisement__container__content__header">Some of our top services
+                        </h2>
+                        <div class="advertisement__container__content__text">
+                          Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                       <button class="advertisement__container__content__button">view more</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- CARDS -->
+
+
+        <div class="cards">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 col-lg-3">
+                  <div class="card">
+                      <div class="services-icon"><i class="far fa-thumbs-up"></i></div>
+                      <div class="card-body">
+                        <h5 class="card-title">SUSPENDISSE</h5>
+                        <p class="card-text">Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla,
+                            placerat vitae at, vehicula ut nunc.</p>
+                        <a href="#" class="btn card-btn btn-primary">read more</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                  <div class="card">
+                      <div class="services-icon"><i class="fas fa-key"></i></div>
+                      <div class="card-body">
+                        <h5 class="card-title">MAECENAS </h5>
+                        <p class="card-text">Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla,
+                            placerat vitae at, vehicula ut nunc.</p>
+                        <a href="#" class="btn card-btn btn-primary">read more</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                  <div class="card">
+                      <div class="services-icon"><i class="far fa-flag"></i></div>
+                      <div class="card-body">
+                        <h5 class="card-title">ALIQUAM</h5>
+                        <p class="card-text">Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla,
+                            placerat vitae at, vehicula ut nunc.</p>
+                        <a href="#" class="btn card-btn btn-primary">read more</a>
+                      </div>
+                    </div>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                  <div class="card">
+                      <div class="services-icon"><i class="fas fa-flask"></i></div>
+                      <div class="card-body">
+                        <h5 class="card-title">HABITASSE</h5>
+                        <p class="card-text">Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla,
+                            placerat vitae at, vehicula ut nunc.</p>
+                        <a href="#" class="btn card-btn btn-primary">read more</a>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="browser">
+          <div class="container">
+            <div class="browser__content">
+              <div class="browser__content__header">WHY MODUS VERSUS?</div>
+              <div class="browser__content__text">Capacitance cascading    integer reflective interface data development high bus cache
+              dithering transponder.</div>
+              <div class="browser__content__img">
+                <img src="img/Browser-tooenterls.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- INFO BLOCK -->
+
+        <div class="info-block">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="info-block__list">
+                  <div class="info-block__list__header">
+                    Why Choose Us ?
+                  </div>
+                  <ul class="info-block__list__items">
+                      <li class="info-block__list__item">
+                        <i class="fas fa-arrow-right"></i> Quisque at massa ipsum
+                      </li>
+                      <li class="info-block__list__item">
+                        <i class="fas fa-arrow-right"></i> Cras vitae felis at lacus eleifend
+                      </li>
+                      <li class="info-block__list__item">
+                        <i class="fas fa-arrow-right"></i> Etiam auctor diam pellentesque
+                      </li>
+                      <li class="info-block__list__item">
+                        <i class="fas fa-arrow-right"></i> Nulla ac massa at dolor
+                      </li>
+                      <li class="info-block__list__item">
+                        <i class="fas fa-arrow-right"></i> Condimentum eleifend vitae vitae
+                      </li>
+                      <li class="info-block__list__item">
+                        <i class="fas fa-arrow-right"></i> Maecenas a lorem augue, egestas
+                      </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-block__middle-section">
+                  <div class="info-block__middle-section__text">
+                    Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam pellentesque lectus <a href="#">vehicula mattis</a>. Nulla ac massa at dolor condimentum eleifend vitae vitae urna.
+                  </div>
+                  <div class="info-block__middle-section__diagrams">
+                      <div class="row">
+                        <div class="col-lg-3">
+                        <div class="info-block__middle-section__diagrams__img">
+                          <img src="img/50.png" alt="procent ">
+                          <div class="info-block__middle-section__diagrams__img__number">50</div>
+                        </div>
+                        <div class="info-block__middle-section__diagrams__name">SUSPENDISSE </div>
+                      </div>
+                        <div class="col-lg-3">
+                        <div class="info-block__middle-section__diagrams__img">
+                          <img src="img/70.png" alt="procent ">
+                          <div class="info-block__middle-section__diagrams__img__number">50</div>
+                        </div>
+                        <div class="info-block__middle-section__diagrams__name">MAECENAS </div>
+                      </div>
+                        <div class="col-lg-3">
+                        <div class="info-block__middle-section__diagrams__img">
+                          <img src="img/80.png" alt="procent ">
+                          <div class="info-block__middle-section__diagrams__img__number">50</div>
+                        </div>
+                        <div class="info-block__middle-section__diagrams__name">ALIQUAM </div>
+                      </div>
+                        <div class="col-lg-3">
+                        <div class="info-block__middle-section__diagrams__img">
+                          <img src="img/100.png" alt="procent ">
+                          <div class="info-block__middle-section__diagrams__img__number">50</div>
+                        </div>
+                        <div class="info-block__middle-section__diagrams__name">HABITASSE </div>
+                      </div>
+                      </div>
+                      
+                  </div>
+                     
+                  </div>
+                </div>
+                 <div class="col-md-3">
+                <div class="info-block__quote">
+                  <div class="info-block__quote__header">
+                      What Client’s Say ?
+                  </div>
+                  <div class="info-block__quote__text">
+                      Curabitur quis nisl in leo euismod venenatis eu in diam. Etiam auctor diam
+                      pellentesque lectus vehicula mattis. Nulla ac massa at dolor condimentum
+                  </div>
+                   <div class="info-block__quote__name">Jhon Doe</div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- OUR_CLIENTS -->
+
+        <div class="our-clients">
+          <div class="container">
+            <div class="our-clients__header">
+                <div class="row">
+                  <div class="col-7 col-sm-4 col-md-3 col-xl-2">
+                      <h5 class="our-clients__header__text">Our Happy Clients</h5>
+                  </div>
+                  <div class="col-sm-5 col-md-7 col-xl-8">
+                    <!-- line -->
+                    <div class="our-clients__header__line">
+                    </div>
+                  </div>
+                  <!-- arrows -->
+                  <div class="col-5 ml-auto col-sm-3 col-md-2  col-xl-2">
+                      <div class="our-clients__header__arrows">
+                          <div class="our-clients__header__arrows__prev">
+                              <i class="fas fa-angle-left"></i>
+                          </div>
+                          <div class="our-clients__header__arrows__next">
+                              <i class="fas fa-angle-right"></i>
+                          </div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+            <div class="our-clients__slider">
+                <div class="row">
+                    <div class="col-lg-2 col-6"><img src="img/jquery.png" alt="jquery"></div>
+                    <div class="col-lg-2 col-6"><img src="img/jquery.png" alt="jquery"></div>
+                    <div class="col-lg-2 col-6"><img src="img/jquery.png" alt="jquery"></div>
+                    <div class="col-lg-2 col-6"><img src="img/jquery.png" alt="jquery"></div>
+                    <div class="col-lg-2 col-6"><img src="img/jquery.png" alt="jquery"></div>
+                    <div class="col-lg-2 col-6"><img src="img/jquery.png" alt="jquery"></div>
+                </div>
+            </div>
+            <!-- <div class="our-clients-slider">
+                <img src="img/jquery.png" alt="jquery">
+                <img src="img/jquery.png" alt="jquery">
+                <img src="img/jquery.png" alt="jquery">
+                <img src="img/jquery.png" alt="jquery">
+                <img src="img/jquery.png" alt="jquery">
+                <img src="img/jquery.png" alt="jquery">
+                <img src="img/jquery.png" alt="jquery">
+            </div> -->
+          </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+              <div class="footer__logo"><img src="img/versus.png" alt=""></div>
+              <div class="footer__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec .
+              </div>
+              <div class="footer-phone">
+                  Phone: <a href="tel:18225695896">182 2569 5896</a>
+              </div>
+              <div class="footer-email">
+              Email: <a href="mailto:info@modu.versus">info@modu.versus</a>
+              </div>
+
+          </div>
+          <div class="col-lg-4">
+              <div class="row">
+                  <div class="col-6">
+                    <div class="footer-links">
+                      <a href="#" class="footer-link-head">Company</a>
+                      <ul>
+                      <li><a href="#" class="footer-link"><i class="fas fa-angle-right"></i>About </a> </li>
+                      <li><a href="#" class="footer-link"><i class="fas fa-angle-right"></i>FAQ </a> </li>
+                      <li><a href="#" class="footer-link"><i class="fas fa-angle-right"></i>Contact </a> </li>
+                      <li><a href="#" class="footer-link"><i class="fas fa-angle-right"></i>Terms </a> </li>
+                      <li><a href="#" class="footer-link"><i class="fas fa-angle-right"></i>Privacy </a> </li>
+                      <li><a href="#" class="footer-link"><i class="fas fa-angle-right"></i>Testimonials </a> </li>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="footer-links">
+                          <a href="#" class="footer-link-head">Community</a>
+                          <ul>
+                          <li href="#" class="footer-link"><i class="fas fa-angle-right"></i>Blog</li>
+                          <li href="#" class="footer-link"><i class="fas fa-angle-right"></i>Forum</li>
+                          <li href="#" class="footer-link"><i class="fas fa-angle-right"></i>Support</li>
+                          <li href="#" class="footer-link"><i class="fas fa-angle-right"></i>Newsletter</li> 
+                          </ul>
+                         </div>
+                  </div>
+                </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="footer-blog-header">
+              <span>from the</span> blog
+            </div>
+            <div class="footer-blog-block">
+              <div class="row">
+                <div class="col-3">
+                    <div class="col-3"><img src="img/post.png" alt="footer post"></div>
+                </div>
+                <div class="col-9">
+                  <div class="footer-blog-text">
+                      <div class="footer-post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                      <div class="footer-post-date">26 May, 2013</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-blog-block">
+              <div class="row">
+                <div class="col-3">
+                    <div class="col-3"><img src="img/post.png" alt="footer post"></div>
+                </div>
+                <div class="col-9">
+                  <div class="footer-blog-text">
+                      <div class="footer-post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+                      <div class="footer-post-date">26 May, 2013</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="subfooter">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 subfooter-left">
+                <p class="subfooter-coop">2013  ModusVersus</p>
+            </div>
+            
+                <div class="col-6 sub-footer-icons">
+                    <div class="subfooter-icons">
+                      <div class="subfooter-icon"><img src="img/Facebook.png" alt="facebook"></div>
+                      <div class="subfooter-icon"><img src="img/g-plus.png" alt="google plus"></div>
+                      <div class="subfooter-icon"><img src="img/twetter.png" alt="twiter"></div>
+                      <div class="subfooter-icon"><img src="img/rss.png" alt="rss"></div>
+                    </div>
+                  </div>
+           
+          </div>
+        </div>
+      </div>
+
+    </footer>
+    
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
